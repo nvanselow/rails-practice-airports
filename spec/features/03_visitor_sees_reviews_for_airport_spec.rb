@@ -8,7 +8,7 @@ require 'rails_helper'
 
 feature "visitor sees list of reviews on airport page" do
   scenario "sees reviews for specific airport" do
-    logan = Airport.create(name: "Boston Logan", city: "Boston", state: "MA"
+    logan = Airport.create(name: "Boston Logan", city: "Boston", state: "MA")
     review_for_logan = Review.create(rating: 4, body: "This is a slightly less than rave review", airport: logan)
 
     visit airport_path(logan)
