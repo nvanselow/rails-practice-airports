@@ -8,7 +8,7 @@ Let's create a Rails app that allows users to review airports. These are the cri
 - What is the relationship between them?
 
 ##To Pull This Down for Practice
-- ` git clone `
+- ` git clone https://github.com/CeeNoriega/rails-practice-airports.git `
 - Create the databases `rake db:create`
 - Run `rake`
 
@@ -16,7 +16,6 @@ Let's create a Rails app that allows users to review airports. These are the cri
 - `git fetch --all` (this pulls down all the remote branches on GitHub for this repo)
 - `git checkout live-solution` (this checks out the live solution of the code)
 
-You can also view all the stuff we added/changed on Github [here](https://github.com/.
 
 ##App Functionality
 - [] An airport has to have a name, location (that includes city and state). It can optionally have a description.
