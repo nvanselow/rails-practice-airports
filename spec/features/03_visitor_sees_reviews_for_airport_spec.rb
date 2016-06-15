@@ -31,7 +31,7 @@ feature "visitor sees list of reviews on airport page" do
     expect(page).to have_content ohare.name
     expect(page).to have_content review_for_ohare.body
 
-    expect(page).not_to have_content review_for_ohare.rating
-    expect(page).not_to have_content review_for_ohare.body
+    expect(page).not_to have_content review_for_logan.rating
+    expect(page).not_to have_content review_for_logan.body
   end
 end
