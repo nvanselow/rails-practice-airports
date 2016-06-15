@@ -1,6 +1,6 @@
 require "rails_helper"
 
-# [] A airport must have a name, address, city, state, and zip code. It can optionally have a description
+# [] A airport must have a name, city, and state. It can optionally have a description
 # [] Visiting the `/airports/new` path should display a form for creating a new airport.
 # [] When adding a new airport, if I fill out the form correctly, I should see the page for the newly created airport.
 # [] When adding a new airport, if I fill out the form incorrectly and submit the form, I should see the form and be displayed the validation errors.
