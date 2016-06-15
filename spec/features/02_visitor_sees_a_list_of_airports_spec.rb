@@ -14,7 +14,7 @@ feature "visitor sees a list of airports" do
     expect(page).to have_content "Boston Logan"
     expect(page).to have_link "O'Hare International"
 
-    click_link "Add New airport"
+    click_link "Add New Airport"
 
     expect(page).to have_content "New Airport Form"
   end

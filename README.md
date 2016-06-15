@@ -12,10 +12,6 @@ Let's create a Rails app that allows users to review airports. These are the cri
 - Create the databases `rake db:create`
 - Run `rake`
 
-##To Pull Down the Solution and Look At It on Your Machine
-- `git fetch --all` (this pulls down all the remote branches on GitHub for this repo)
-- `git checkout live-solution` (this checks out the live solution of the code)
-
 
 ##App Functionality
 - [] An airport has to have a name, location (that includes city and state). It can optionally have a description.

@@ -10,17 +10,16 @@ feature "visitors can add airports" do
   scenario "visitor adds new airport successfully" do
 
     visit new_airport_path
-    expect(page).to have_content "New airport Form"
+    expect(page).to have_content "New Airport Form"
 
     fill_in 'Name', with: "Boston Logan"
     fill_in 'City', with: "Boston"
     fill_in 'State', with: "Massachusetts"
-    fill_in 'Zip', with: "02111"
     fill_in 'Description', with: "This airport is pretty decent! Could have more Dunks."
 
-    click_button "Add airport"
+    click_button "Add Airport"
 
-    expect(page).to have_content "airport added successfully"
+    expect(page).to have_content "Airport added successfully"
     expect(page).to have_content "Boston Logan"
     expect(page).to have_content "This airport is pretty decent! Could have more Dunks."
   end
@@ -28,12 +27,9 @@ feature "visitors can add airports" do
   scenario "visitor does not provide proper information for an airport" do
     visit new_airport_path
 
-    click_button "Add airport"
+    click_button "Add Airport"
     expect(page).to have_content "Name can't be blank"
     expect(page).to have_content "City can't be blank"
     expect(page).to have_content "State can't be blank"
-    expect(page).to have_content "Zip can't be blank"
-    expect(page).to have_content "Zip is the wrong length (should be 5 characters)"
-    expect(page).to have_content "Zip is not a number"
   end
 end
