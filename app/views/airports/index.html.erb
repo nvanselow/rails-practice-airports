@@ -1,0 +1,9 @@
+<h1>All Airports</h1>
+
+<%= link_to "Add New Airport", new_airport_path, class: "button" %>
+
+<ul>
+  <% @airports.each do |airport| %>
+    <%= link_to airport.name, airport_path(airport) %>
+  <% end %>
+</ul>
