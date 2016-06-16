@@ -3,3 +3,18 @@
 <p>
   <%= @airport.description %>
 </p>
+
+<h3>Reviews:</h3>
+<%= link_to "Add a Review", new_airport_review_path(@airport) %>
+<div class="reviews">
+  <% @reviews.each do |review| %>
+    <div class="review">
+      <h5>Rating: <%= review.rating %></h5>
+      <p>
+        Description:
+        <%= review.body %>
+      </p>
+      (<%= review.created_at.strftime("%B %d %Y") %>)
+    </div>
+  <% end %>
+</div>

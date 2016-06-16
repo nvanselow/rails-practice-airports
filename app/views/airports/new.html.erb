@@ -16,10 +16,4 @@
   <%= f.submit "Add Airport" %>
 <% end %>
 
-<% if @errors %>
-  <ul>
-    <% @errors.each do |error| %>
-      <%= error %>
-    <% end %>
-  </ul>
-<% end %>
+<%= render partial: 'application/form_errors', locals: {errors: @errors} %>

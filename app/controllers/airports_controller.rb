@@ -10,6 +10,7 @@ class AirportsController < ApplicationController
 
   def show
     @airport = Airport.find(params[:id])
+    @reviews = @airport.reviews
   end
 
   def create

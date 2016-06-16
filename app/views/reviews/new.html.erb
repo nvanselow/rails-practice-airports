@@ -1,0 +1,13 @@
+<h1>Review Form for <%= @airport.name %></h1>
+
+<%= form_for [@airport, @review] do |f| %>
+  <%= f.label :rating %>
+  <%= f.number_field :rating, value: '5' %>
+
+  <%= f.label :body, "Review" %>
+  <%= f.text_area :body %>
+
+  <%= f.submit "Add Review" %>
+<% end %>
+
+<%= render partial: 'application/form_errors', locals: {errors: @errors} %>
